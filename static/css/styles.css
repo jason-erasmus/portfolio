@@ -1,0 +1,8 @@
+.home {
+    background-image: url("/static/body_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+  }

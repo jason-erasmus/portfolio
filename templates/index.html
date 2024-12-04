@@ -1,0 +1,85 @@
+{% extends 'base.html' %} {% block body %}
+
+<nav
+  class="navbar bg-primary navbar-expand-lg bg-body-tertiary"
+  data-bs-theme="dark"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="{{url_for('static',filename="logo-black.png")}}" alt="Your Logo
+      Description" width="40" height="32"><span class="fs-4"
+        >Jason Erasmus</span
+      >
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+    
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="home">
+<div class="container-fluid" id="bg">
+  <div class="px-4 py-5 my-0 text-center">
+    <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+  </section>
+  <section class="about">
+    <div class="container-fluid" id="bg">
+      <div class="px-4 py-5 my-0 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">About me</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, iure accusantium autem ratione laboriosam exercitationem dolorum id dignissimos minus reiciendis doloribus delectus labore facere explicabo quo libero optio facilis quidem?.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <section class="projects">
+    <h3>Carousel with projects and screenshots</h3>
+  </section>
+  <section class="contact">
+    <h3>Contact form</h3>
+  </section>
+
+<footer class="footer"><h3>footer</h3></footer>
+
+{% endblock body %}
